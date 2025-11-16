@@ -3,9 +3,8 @@ package com.ejercicios.funciones;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Pokemons {
-
-	public static void main(String[] args) {
+public class MiPokemon {
+public static void main(String[] args) {
 		
 		//CREAR VARIABLES
 		String [] pkNombres = {"Charmander", "Squirtle", "Bulbasaur"};
@@ -40,72 +39,10 @@ public class Pokemons {
 				turnoJugador = true;
 			}
 			
-			//ATACA LA CPU
-			/*if(pkHp[pokemonJugador] > 0) {
-				System.out.print("El pokemon va a hacer: ");
-				totalDaño = calcularDaño(pkDmg, pkTipos, pokemonCpu, pokemonJugador, totalDaño);
-				System.out.println(totalDaño);
-				calcularVida(pokemonJugador, totalDaño, pkHp);
-				System.out.print("Al pokemon jugador le queda ");
-				System.out.println(pkHp[pokemonJugador] + " vida");
-			}*/
 			
 		}
 		
-		
-		
-		
-		
-		/*
-		 * Vamos a crear 3 pokemons
-		 * 
-		 * Nombre,. Tipo, puntos de ataque, puntos de salud
-		 * 
-		 * 
-		 * Tipo : Fuego, Agua, Planta
-		 * 
-		 * 
-		 * Si fuego vs planta , planta vs agua, agua vs fuego --> Le hace doble de daño
-		 * 
-		 * Funcion que calcule puntos de daño
-		 * Funcion calcule los puntos de salud restantes
-		 * 
-		 * 
-		 * Ejemplo de salida:
-		 * 
-		 * 
-		 * 	CHARMANDER SE ENFRENTA A SQUIRTLE
-		 * 
-		 * 
-		 * 	Se ejecuta el codigo hasta que un pokemon se quede sin vida: 
-		 * 
-		 *  Empieza turno = true
-		 * 
-		 * 	if(turno == true)
-		 * 		Charmander hace x puntos de daño a squirtle, a squirtle le quedan x hp 
-		 * 		
-		 * 
-		 * 	else 
-		 * 		Squirtle hace x puntos de daño a charmander, a charmander le quedan x hp
-		 * 		
-			turno = !turno;
-			
-			turno empieza en true
-			al final se le asigna !turno que es false --> turno recibe false
-			en la siguiente ejecucion turno esta en false
-			Al final recibe !turno que es true --> turno recibe true
-			
-			
-			
-			
-		
 	
-		 * 
-		 * 
-		 * 
-		 * 
-		 * **/
-		
 		
 
 	}
@@ -143,9 +80,7 @@ public class Pokemons {
 				(pkTipos[pokemon1] == "Planta" && pkTipos[pokemon2] == "Agua")||
 				(pkTipos[pokemon1] == "Agua" && pkTipos[pokemon2] == "Fuego")) {
 			
-			//Opcion calcularDaño unicamente
 			totalDaño = pkDmg[pokemon1]*2;
-			//pkHp[pokemonCpu] = pkHp[pokemonCpu] - (pkDmg[pokemonJugador] * MULTIPLICADOR);
 		}
 		return totalDaño;
 	}
@@ -153,3 +88,4 @@ public class Pokemons {
 	
 
 }
+	
